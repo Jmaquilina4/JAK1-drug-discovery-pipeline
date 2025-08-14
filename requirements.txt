@@ -1,0 +1,7 @@
+Required packages:
+
+rdkit
+pandas
+scikit-learn
+deepchem
+autodock-vina
