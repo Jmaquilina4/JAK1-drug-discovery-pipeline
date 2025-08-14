@@ -1,0 +1,18 @@
+# Pipeline configuration for JAK1 drug discovery
+
+input_data_path: ''          # Path to your raw input data file(s)
+output_data_path: ''         # Where processed data/results will be saved
+filter_thresholds:           # Example filter parameters
+  min_mw: 250                # Minimum molecular weight
+  max_mw: 500                # Maximum molecular weight
+qsar_model_params:           # Example model parameters
+  model_type: 'random_forest'
+  n_estimators: 100
+  random_state: 42
+docking_params:              # Docking settings (adjust as needed)
+  vina_exhaustiveness: 8
+
+generative_design:
+  num_candidates: 50
+
+# Add more sections as pipeline modules are developed
